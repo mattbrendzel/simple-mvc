@@ -60,7 +60,7 @@ The following features have been implemented so far:
 
 ## Work Notes
 
-This project was started on Saturday, July 30 2016, and up intil now (8/4) it's
+This project was started on Saturday, July 30 2016, and up until now (8/5) it's
 mostly been casual noodling around, with little regard for version control,
 testing, or optimal design principles.
 
