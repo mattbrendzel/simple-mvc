@@ -60,29 +60,38 @@ The following features have been implemented so far:
 
 ## Work Notes
 
-This project was started on Saturday, July 30 2016, and up until now (8/5) it's
-mostly been casual noodling around, with little regard for version control,
-testing, or optimal design principles.
+This project was started on Saturday, July 30 2016, and work was more or less abandoned in August 2016; I've reopened this project as of September 2018.
 
-Seriously, if this project had any more spaghetti or cowboy coding, it would
-be directed by Sergio Leone.
+Work still to be done:
 
-In short, there's definitely still more to do!
+### Controllers
 
--   [ ] Add a data layer! Don't have one yet.
+-   [ ] Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
 
--   [ ] Handle requests for static assets (e.g. CSS stylesheets, favicons).
+-   [ ] Handle rendering within the specific controller file.
+
+### Routing and Views
 
 -   [ ] Make views truly routeable by parsing nested URLs and nesting templates
     appropriately withing `<$outlet$>` tags.
 
--   [ ] Auto-load controllers (and, eventually, models) on startup by traversing
-        the file tree.
+-   [ ] Handle requests for static assets (e.g. CSS stylesheets, favicons).
+
+-   [ ] Serve up error pages in the event of an error.
+
+### Models/Data
+
+-   [ ] Define a model abstraction
+
+### App Management
 
 -   [ ] Further extend changes to the system's object model so that true
     inheritance is possible.
 
+-   [ ] Create a general error-handling system.
+
+-   [ ] Auto-load controllers, views, and models on startup by traversing the file tree.
+
 -   [ ] Add some kind of shortcut for resource routing.
 
--   [ ] Once everything else is done, add a command-line generator for
-    creating new controller/model/view files.
+-   [ ] Add a command-line generator for creating new controller/model/view files.
