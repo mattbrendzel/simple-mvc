@@ -1,17 +1,11 @@
-<html>
-  <head>
-    <style>
-      body {
-        background-color: green;
-      }
-    </style>
-  </head>
-  <body>
-    <$>partialA $>
-    <$#each posts$>
-      <$>partialB $>
-    <$/each$>
-    <p><$25$><$' bottles of ' $><$"beer on the wall"$></p>
-    <p><$concat "hello" " " "world" $></p>
-  </body>
-</html>
+<style>
+  body {
+    background-color: green;
+  }
+</style>
+<$>partialA $>
+<$#each posts$>
+  <$>partialB $>
+<$/each$>
+<p><$25$><$' bottles of ' $><$"beer on the wall"$></p>
+<p><$concat "hello" " " "world" $></p>

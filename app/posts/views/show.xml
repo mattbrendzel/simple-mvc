@@ -1,14 +1,8 @@
-<html>
-  <head>
-    <style>
-      body {
-        background-color: teal;
-      }
-    </style>
-  </head>
-  <body>
-    <$>partialA $>
-    <h4> <$ post.title $> </h4>
-    <p> <$ post.body $> </p>
-  </body>
-</html>
+<style>
+  body {
+    background-color: teal;
+  }
+</style>
+<$>partialA $>
+<h4> <$ post.title $> </h4>
+<p> <$ post.body $> </p>

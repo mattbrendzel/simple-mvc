@@ -1,14 +1,8 @@
-<html>
-  <head>
-    <style>
-      body {
-        background-color: gold;
-      }
-    </style>
-  </head>
-  <body>
-    <$#each comments$>
-      <p><$ body $></p>
-    <$/each$>
-  </body>
-</html>
+<style>
+  body {
+    background-color: gold;
+  }
+</style>
+<$#each comments$>
+  <p><$ body $></p>
+<$/each$>

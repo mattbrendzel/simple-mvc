@@ -1,12 +1,6 @@
-<html>
-  <head>
-    <style>
-      body {
-        background-color: gold;
-      }
-    </style>
-  </head>
-  <body>
-    <p><$ comment.body $></p>
-  </body>
-</html>
+<style>
+  body {
+    background-color: gold;
+  }
+</style>
+<p><$ comment.body $></p>

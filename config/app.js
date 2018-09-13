@@ -28,7 +28,7 @@ App.initialize = function(){
 }
 
 /// REGISTER PARTIALS AND VIEW HELPERS HERE ///
-App.registerPartial('partialA', '<h1> THIS IS A PARTIAL </h1>');
+App.registerPartial('partialA', '<h2> THIS IS A PARTIAL </h2>');
 App.registerPartial('partialB', '<div> <h3><$ upperCase title $></h3> <p><$ body $></p> </div>');
 App.registerInlineHelper('concat', function(){
   var args = Array.prototype.slice.call(arguments);
