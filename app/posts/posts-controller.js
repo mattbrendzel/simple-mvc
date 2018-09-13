@@ -15,10 +15,14 @@ const examplePosts = [
 PostsController.index = function() {
   console.log('run INDEX action');
   this.posts = examplePosts;
+  // Unless otherwise specified, tries to render a view using data stored
+  // on the controller object.
 };
 PostsController.show = function() {
   console.log('run SHOW action');
-  this.post = examplePosts[this.params.id - 1];
+  // this.post = examplePosts[this.params.id - 1];
+  return this.render(examplePosts[this.params.id - 1],"json");
+  // However, it can also render a JSON response.
 };
 PostsController.new = function() {
   console.log('run NEW action');
