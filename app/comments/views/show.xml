@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <p><$ comment.body $></p>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <$#each comments$>
+      <p><$ body $></p>
+    <$/each$>
+  </body>
+</html>

@@ -23,6 +23,7 @@ App.initialize = function(){
   console.log("App Initializing...");
   this.controllers = {};
   this.controllers['posts'] = require(`${root}/app/posts/posts-controller.js`);
+  this.controllers['comments'] = require(`${root}/app/comments/comments-controller.js`);
   this.models = {};
 }
 
