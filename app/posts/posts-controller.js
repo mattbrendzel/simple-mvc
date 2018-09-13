@@ -4,13 +4,21 @@ const root = process.cwd();
 const Controller = require(`${root}/lib/controller.js`);
 const PostsController = new Controller('posts');
 
+// Placeholder Data
+const examplePosts = [
+    { title:'Post 1', body: 'Lorem ipsum' },
+    { title:'Post 2', body: 'dolor' },
+    { title:'Post 3', body: 'sit amet' }
+];
+
 // How to define a controller.
 PostsController.index = function() {
   console.log('run INDEX action');
-  this.posts = 'POSTS!!!!'
+  this.posts = examplePosts;
 };
 PostsController.show = function() {
   console.log('run SHOW action');
+  this.post = examplePosts[this.params.id - 1];
 };
 PostsController.new = function() {
   console.log('run NEW action');
