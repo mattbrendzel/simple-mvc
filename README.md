@@ -66,9 +66,9 @@ Work still to be done:
 
 ### Controllers
 
--   [ ] Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
+-   [X] Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
 
--   [ ] Handle rendering within the specific controller file.
+-   [X] Handle rendering within the specific controller file.
 
 ### Routing and Views
 
