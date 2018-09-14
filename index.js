@@ -16,7 +16,14 @@ const server = http.createServer(function(request, response){
   Router.parse(request)
   .then(function(params){ // Route the request
     console.log('incoming params:', params);
-    return App.controllers[params.controller].handleRequest(params);
+    // If it matches a controller handle with that controller; otherwise, just serve it up.
+    if (params.controller) {
+      console.log("controller responding");
+      return App.controllers[params.controller].handleRequest(params);
+    } else if (request.url.match(/\/assets/)){
+      console.log("serving asset: ", request.url);
+      return App.loader.loadAsset(request.url.split("/").slice(-1)[0]);
+    }
   })
   .then(function(responseData){  // Return Rendered View Data
     console.log('responseData:', responseData)
