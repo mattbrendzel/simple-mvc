@@ -25,6 +25,10 @@ const server = http.createServer(function(request, response){
       return App.loader.loadAsset(request.url.split("assets/").slice(-1)[0]);
     }
   })
+  .catch(e => { // Handle errors
+    console.log(e);
+    return "";
+  })
   .then(function(responseData){  // Return Rendered View Data
     console.log('responseData:', responseData)
     response.write(responseData);
