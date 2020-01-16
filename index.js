@@ -22,7 +22,7 @@ const server = http.createServer(function(request, response){
       return App.controllers[params.controller].handleRequest(params);
     } else if (request.url.match(/\/assets/)){
       console.log("serving asset: ", request.url);
-      return App.loader.loadAsset(request.url.split("/").slice(-1)[0]);
+      return App.loader.loadAsset(request.url.split("assets/").slice(-1)[0]);
     }
   })
   .then(function(responseData){  // Return Rendered View Data
