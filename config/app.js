@@ -21,7 +21,7 @@ App.registerInlineHelper = function(name, cb){
 /// REGISTER CONTROLLERS AND MODELS HERE ///
 App.initialize = function(){
   console.log("App Initializing...");
-  this.loader = require(`${root}/lib/fileloader.js`);
+  this.loader = require(`${root}/lib/file-loader.js`);
   this.controllers = {};
   this.controllers['posts'] = require(`${root}/app/resources/posts/posts-controller.js`);
   this.controllers['comments'] = require(`${root}/app/resources/comments/comments-controller.js`);
