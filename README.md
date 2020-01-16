@@ -2,96 +2,88 @@
 
 ## "What is SimpleMVC?"
 
-SimpleMVC is a simple back-end framework that draws insipiration from Rails,
+SimpleMVC is a simple back-end JavaScript framework that draws insipiration from Rails,
 Express, Ember, and Handlebars.
-
-The following features have been implemented so far:
-
--   ROUTING
-
-    -   Parse query parameters from inbound requests.
-
-    -   Parse properties from the body of a POST or PATCH request.
-
-    -   Extract the method and URL of a request for routing.
-
-    -   Extract dynamic segments from routes.
-
-    -   Load in routes from an external config file (`config/routes.js`).
-
-    -   Handle multiple dynamic segments, and add the data from all such
-        segments to the request parameters.
-
--   CONTROL
-
-    -   Create new custom Controllers by instantiating a Controller class and
-        adding methods and properties.
-
-    -   Fire a specific method from a specific controller in response to
-        a request.
-
-    -   Execute 'before_action' and 'after_action' callbacks, respectively,
-        before and after executing the controller action.
-
-    -   Define new 'before-action' and 'after-action' behaviors on the fly for
-        any given action on any given controller.
-
-    -   Render a view after running the action (but before running
-        'after-action' callbacks).
-
--   VIEW
-
-    -   Render a static view template, with no interpolation.
-
-    -   Interpolate the values of variables that are direct properties of a
-        given 'context' object.
-
-    -   Render inline helpers that change the properties of data passed in.
-
-    -   Render block helpers that manipulate inner HTML/template content.
-
-    -   Render partial templates within a larger template.
-
-    -   Load default partials and helpers (as part of the view engine), and
-        define custom ones at the application layer.
-
-    -   Access and render nested properties (using '.' notation) of variables in
-        the rendering context.
 
 ## Work Notes
 
-This project was started on Saturday, July 30 2016, and work was more or less abandoned in August 2016; I've reopened this project as of September 2018.
+This project was started in July 2016 and worked on for about a month. I briefly revisited it in 2018, but
+had to put it on ice when I started a new job. As of January 2020, I have reopened this project to see if I can finish what I started.
 
-Work still to be done:
+## FEATURE ROADMAP
 
-### Controllers
+### Request Routing
 
--   [X] Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
+  - [x]   Parse query parameters from inbound requests.
 
--   [X] Handle rendering within the specific controller file.
+  - [x]   Parse properties from the body of a POST or PATCH request.
 
-### Routing and Views
+  - [x]   Extract the method and URL of a request for routing.
 
--   [ ] Make views truly routeable by parsing nested URLs and nesting templates
-    appropriately withing `<$outlet$>` tags.
+  - [x]   Extract dynamic segments from routes.
 
--   [ ] Handle requests for static assets (e.g. CSS stylesheets, favicons).
+  - [x]   Load in routes from an external config file (`config/routes.js`).
 
--   [ ] Serve up error pages in the event of an error.
+  - [x]   Handle multiple dynamic segments, and add the data from all such segments to the request parameters.
 
-### Models/Data
+### Request Handling
 
--   [ ] Define a model abstraction
+  - [x]   Create new custom Controllers by instantiating a Controller class and adding methods and properties.
 
-### App Management
+  - [x]   Fire a specific method from a specific controller in response to a request.
 
--   [ ] Further extend changes to the system's object model so that true
-    inheritance is possible.
+  - [x]   Execute 'before_action' and 'after_action' callbacks, respectively, before and after executing the controller action.
 
--   [ ] Create a general error-handling system.
+  - [x]   Define new 'before-action' and 'after-action' behaviors on the fly for any given action on any given controller.
 
--   [ ] Auto-load controllers, views, and models on startup by traversing the file tree.
+  - [x]   Render a view after running the action (but before running 'after-action' callbacks).
 
--   [ ] Add some kind of shortcut for resource routing.
+  - [x]   Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
 
--   [ ] Add a command-line generator for creating new controller/model/view files.
+  - [ ]   Make views truly routeable by parsing nested URLs and nesting templates appropriately withing `<$outlet$>` tags.
+
+  - [ ]   Handle requests for static assets (e.g. CSS stylesheets, favicons).
+
+  - [ ]   Serve up error pages in the event of an error.
+
+### View Rendering
+
+  - [x]   Render a static view template, with no interpolation.
+
+  - [x]   Interpolate the values of variables that are direct properties of a given 'context' object.
+
+  - [x]   Render inline helpers that change the properties of data passed in.
+
+  - [x]   Render block helpers that manipulate inner HTML/template content.
+
+  - [x]   Render partial templates within a larger template.
+
+  - [x]   Load default partials and helpers (as part of the view engine), and define custom ones at the application layer.
+
+  - [x]   Access and render nested properties (using '.' notation) of variables in the rendering context.
+
+  - [x]   Handle rendering within the specific controller file.
+
+### Database Integration
+
+  - [ ]  Create and manage a connection with a Postgres database (eventually, more database types).
+
+  - [ ]  Create a SQL syntax generator for basic CRUD operations.
+
+  - [ ]  Define a model abstraction and use it to perform SQL queries and operations.
+
+  - [ ]  Generalize the model by creating standardized methods for data manipulation.
+
+  - [ ]  Make models heritable.
+
+### General
+
+  - [ ]  Further extend changes to the system's object model so that true inheritance is possible.
+
+  - [ ]  Create a general error-handling system.
+
+  - [ ]  Auto-load controllers, views, and models on startup by traversing the file tree.
+
+  - [ ]  Add some kind of shortcut for resource routing.
+
+  - [ ]  Add a command-line generator for creating new controller/model/view files.
