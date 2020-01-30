@@ -2,8 +2,9 @@
   "name": "simple-mvc",
   "version": "1.0.0",
   "description": "from scratch... because why not",
-  "main": "index.js",
+  "main": "lib/server.js",
   "scripts": {
+    "start": "node lib/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matt Brendzel",
