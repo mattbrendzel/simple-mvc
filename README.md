@@ -44,7 +44,7 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
 
-  - [ ]   Make views truly routeable by parsing nested URLs and nesting templates appropriately withing `<$outlet$>` tags.
+  - [ ]   Parse nested URLs so that nested views can be rendered.
 
   - [x]   Handle requests for CSS and JavaScript files.
 
@@ -72,6 +72,8 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
   - [x]   Access and render nested properties (using '.' notation) of variables in the rendering context.
 
   - [x]   Handle rendering within the specific controller file.
+
+  - [ ]   Render mutliple nested view templates within the appropriately `<$outlet$>` tags.
 
 </details>
 
