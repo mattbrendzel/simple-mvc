@@ -13,6 +13,7 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 ## FEATURE ROADMAP
 
 ### Request Routing
+<details>
 
   - [x]   Parse query parameters from inbound requests.
 
@@ -26,8 +27,11 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Handle multiple dynamic segments, and add the data from all such segments to the request parameters.
 
+</details>
+
 ### Request Handling
 
+<details>
   - [x]   Create new custom Controllers by instantiating a Controller class and adding methods and properties.
 
   - [x]   Fire a specific method from a specific controller in response to a request.
@@ -42,12 +46,17 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [ ]   Make views truly routeable by parsing nested URLs and nesting templates appropriately withing `<$outlet$>` tags.
 
-  - [ ]   Handle requests for static assets (e.g. CSS stylesheets, favicons).
+  - [x]   Handle requests for CSS and JavaScript files.
+
+  - [ ]   Handle requests for images and favicons.
 
   - [ ]   Serve up error pages in the event of an error.
 
+</details>
+
 ### View Rendering
 
+<details>
   - [x]   Render a static view template, with no interpolation.
 
   - [x]   Interpolate the values of variables that are direct properties of a given 'context' object.
@@ -64,7 +73,11 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Handle rendering within the specific controller file.
 
+</details>
+
 ### Database Integration
+
+<details>
 
   - [ ]  Create and manage a connection with a Postgres database (eventually, more database types).
 
@@ -76,7 +89,11 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [ ]  Make models heritable.
 
+</details>
+
 ### General
+
+<details>
 
   - [ ]  Further extend changes to the system's object model so that true inheritance is possible.
 
@@ -87,3 +104,5 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
   - [ ]  Add some kind of shortcut for resource routing.
 
   - [ ]  Add a command-line generator for creating new controller/model/view files.
+
+</details>
