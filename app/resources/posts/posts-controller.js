@@ -13,45 +13,42 @@ const examplePosts = [
 
 // How to define a controller.
 PostsController.index = function() {
-  console.log('run INDEX action');
   this.posts = examplePosts;
   // Unless otherwise specified, tries to render a view using data stored
   // on the controller object.
 };
 PostsController.show = function() {
-  console.log('run SHOW action');
-  // this.post = examplePosts[this.params.id - 1];
   return this.render(examplePosts[this.params.id - 1],"json");
   // However, it can also render a JSON response.
 };
 PostsController.new = function() {
-  console.log('run NEW action');
+  // console.log('run NEW action');
 };
 PostsController.create = function() {
-  console.log('run CREATE action');
+  // console.log('run CREATE action');
 };
 PostsController.edit = function() {
-  console.log('run EDIT action');
+  // console.log('run EDIT action');
 };
 PostsController.update = function() {
-  console.log('run UPDATE action');
+  // console.log('run UPDATE action');
 };
 PostsController.destroy = function() {
-  console.log('run DESTROY action');
+  // console.log('run DESTROY action');
 };
 
 // Define 'before action' and 'after action' behavior.
 PostsController.before(['index'], function() {
-  console.log("INDEX's 'before' action");
+  // console.log("INDEX's 'before' action");
 });
 PostsController.after(['index'], function() {
-  console.log("INDEX's 'after' action");
+  // console.log("INDEX's 'after' action");
 });
 PostsController.before(['show', 'new'], function() {
-  console.log('Runs before SHOW and NEW');
+  // console.log('Runs before SHOW and NEW');
 });
 PostsController.after(['edit'], function() {
-  console.log('Runs after EDIT');
+  // console.log('Runs after EDIT');
 });
 
 module.exports = PostsController;
