@@ -9,3 +9,14 @@
 <$/each$>
 <p><$25$><$' bottles of ' $><$"beer on the wall"$></p>
 <p><$concat "hello" " " "world" $></p>
+<$#if false$>
+  <p> IF </p>
+  <$else-if false$>
+  <p> ELSE-IF-1 </p>
+  <$else-if true$>
+  <p> ELSE-IF-2 </p>
+  <$else-if true$>
+  <p> ELSE-IF-3 </p>
+  <$else$>
+  <p> ELSE </p>
+<$/if$>
