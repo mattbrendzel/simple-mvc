@@ -9,7 +9,7 @@
 <$/each$>
 <p><$25$><$' bottles of ' $><$"beer on the wall"$></p>
 <p><$concat "hello" " " "world" $></p>
-<$#if false$>
+<$#if true$>
   <p> IF </p>
   <$else-if false$>
   <p> ELSE-IF-1 </p>
