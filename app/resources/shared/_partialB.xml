@@ -1,4 +1,4 @@
 <div>
-  <h3><$ upperCase title $></h3>
-  <p><$ body $></p>
+  <h3><$= upperCase(title) $></h3>
+  <p><$= body $></p>
 </div>

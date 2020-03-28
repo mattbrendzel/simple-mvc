@@ -7,8 +7,8 @@
 <$#each posts$>
   <$>partialB $>
 <$/each$>
-<p><$25$><$' bottles of ' $><$"beer on the wall"$></p>
-<p><$concat "hello" " " "world" $></p>
+<p><$= 25 $><$=" bottles of "$><$="beer on the wall"$></p>
+<p><$= concat("hello"," ","world") $></p>
 <$#if true$>
   <p> IF </p>
   <$else-if false$>
