@@ -25,16 +25,19 @@ PostsController.new = function() {
   // console.log('run NEW action');
 };
 PostsController.create = function() {
-  // console.log('run CREATE action');
+  console.log('run CREATE action');
+  return this.render('success', "json");
 };
 PostsController.edit = function() {
   // console.log('run EDIT action');
 };
 PostsController.update = function() {
-  // console.log('run UPDATE action');
+  console.log('run UPDATE action');
+  return this.render('success', "json");
 };
 PostsController.destroy = function() {
-  // console.log('run DESTROY action');
+  console.log('run DESTROY action');
+  return this.render('success', "json");
 };
 
 // Define 'before action' and 'after action' behavior.
