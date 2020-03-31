@@ -3,4 +3,4 @@
     background-color: gold;
   }
 </style>
-<p><$ comment.body $></p>
+<p><$= comment.body $></p>

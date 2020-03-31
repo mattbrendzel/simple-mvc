@@ -4,5 +4,5 @@
   }
 </style>
 <$#each comments$>
-  <p><$ body $></p>
+  <p><$= body $></p>
 <$/each$>
