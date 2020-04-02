@@ -7,8 +7,9 @@ Express, Ember, and Handlebars.
 
 ## Work Notes
 
-This project was started in July 2016 and worked on for about a month. I briefly revisited it in 2018, but
-had to put it on ice when I started a new job. As of January 2020, I have reopened this project to see if I can finish what I started.
+This project was started in July 2016 and worked on for about a month.
+I briefly revisited it in 2018, but had to put it on ice when I started a new job.
+In January 2020, I reopened this project to see if I can finish what I started.
 
 ## FEATURE ROADMAP
 
@@ -27,6 +28,10 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Handle multiple dynamic segments, and add the data from all such segments to the request parameters.
 
+  - [ ]   Generate routes programmatically (i.e. resource routing) using shortcuts.
+
+  - [ ]   Parse nested routes so that nested views can be rendered.
+
 </details>
 
 ### Request Handling
@@ -44,13 +49,13 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Finish making controllers abstract, so that all non-universal code lives in each specific controller file.
 
-  - [ ]   Parse nested URLs so that nested views can be rendered.
-
   - [x]   Handle requests for CSS and JavaScript files.
 
   - [ ]   Handle requests for images and favicons.
 
   - [ ]   Serve up error pages in the event of an error.
+
+  - [ ]   Serve up a default landing page for the application root if one is not configured.
 
 </details>
 
@@ -73,7 +78,9 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
   - [x]   Handle rendering within the specific controller file.
 
-  - [ ]   Render mutliple nested view templates within the appropriately `<$outlet$>` tags.
+  - [x]   Create a parser to safely execute JavaScript code within the context of a template so that data can be passed to helpers.
+
+  - [ ]   Render multiple nested view templates within the appropriately `<$outlet$>` tags.
 
 </details>
 
@@ -84,6 +91,8 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
   - [ ]  Create and manage a connection with a Postgres database (eventually, more database types).
 
   - [ ]  Create a SQL syntax generator for basic CRUD operations.
+
+  - [ ]  Define a migration abstraction and use it to make (and revert) changes to a database.
 
   - [ ]  Define a model abstraction and use it to perform SQL queries and operations.
 
@@ -97,13 +106,13 @@ had to put it on ice when I started a new job. As of January 2020, I have reopen
 
 <details>
 
+  - [x]  Create a testing tool to help ensure that components behave correctly.
+
   - [ ]  Further extend changes to the system's object model so that true inheritance is possible.
 
   - [ ]  Create a general error-handling system.
 
   - [ ]  Auto-load controllers, views, and models on startup by traversing the file tree.
-
-  - [ ]  Add some kind of shortcut for resource routing.
 
   - [ ]  Add a command-line generator for creating new controller/model/view files.
 
