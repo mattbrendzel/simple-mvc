@@ -37,6 +37,7 @@ In January 2020, I reopened this project to see if I can finish what I started.
 ### Request Handling
 
 <details>
+
   - [x]   Create new custom Controllers by instantiating a Controller class and adding methods and properties.
 
   - [x]   Fire a specific method from a specific controller in response to a request.
@@ -62,6 +63,7 @@ In January 2020, I reopened this project to see if I can finish what I started.
 ### View Rendering
 
 <details>
+
   - [x]   Render a static view template, with no interpolation.
 
   - [x]   Interpolate the values of variables that are direct properties of a given 'context' object.
